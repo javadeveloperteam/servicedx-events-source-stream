@@ -1,0 +1,15 @@
+server:
+  port: 8887
+
+kafka:
+ events:
+    topic: servicedx.events
+ subscription:
+     topic: servicedx.events.subscription
+spring:
+  kafka:
+    bootstrap-servers: 
+    - kafka-bootstrap-server-3bb0e162c203dbfa.elb.us-east-1.amazonaws.com:9092,kafka-bootstrap-server-3bb0e162c203dbfa.elb.us-east-1.amazonaws.com:9093
+    producer:
+      bootstrap-servers:
+      - kafka-bootstrap-server-3bb0e162c203dbfa.elb.us-east-1.amazonaws.com:9092,kafka-bootstrap-server-3bb0e162c203dbfa.elb.us-east-1.amazonaws.com:9093
